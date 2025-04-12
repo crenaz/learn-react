@@ -1,51 +1,31 @@
-body {
-    font: 14px "Century Gothic", Futura, sans-serif;
-    margin: 20px;
-  }
-  
-  ol, ul {
-    padding-left: 30px;
-  }
-  
-  .board-row:after {
-    clear: both;
-    content: "";
-    display: table;
-  }
-  
-  .status {
-    margin-bottom: 10px;
-  }
-  
-  .square {
-    background: #fff;
-    border: 1px solid #999;
-    float: left;
-    font-size: 24px;
-    font-weight: bold;
-    line-height: 34px;
-    height: 34px;
-    margin-right: -1px;
-    margin-top: -1px;
-    padding: 0;
-    text-align: center;
-    width: 34px;
-  }
-  
-  .square:focus {
-    outline: none;
-  }
-  
-  .kbd-navigation .square:focus {
-    background: #ddd;
-  }
-  
-  .game {
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .game-info {
-    margin-left: 20px;
-  }
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Keep your custom styles below */
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.square {
+  @apply bg-white border border-gray-400 float-left text-2xl font-bold leading-[34px] h-[34px] -mr-[1px] -mt-[1px] p-0 text-center w-[34px];
+}
+
+.square:focus {
+  @apply outline-none;
+}
+
+.kbd-navigation .square:focus {
+  @apply bg-gray-200;
+}
+
+.game {
+  @apply flex flex-row;
+}
+
+.game-info {
+  @apply ml-5;
+}
   
