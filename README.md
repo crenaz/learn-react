@@ -1,4 +1,5 @@
-Left off at:
+I'm going to see what I can do with this.. . 
+Last time, I left off at:
 https://reactjs.org/tutorial/tutorial.html#wrapping-up
 
 
